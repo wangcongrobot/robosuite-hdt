@@ -7,6 +7,7 @@ from .robotiq_gripper import RobotiqGripper
 from .pushing_gripper import PushingGripper
 from .robotiq_three_finger_gripper import RobotiqThreeFingerGripper
 from .panda_gripper import PandaGripper
+from .hdt_gripper import HDTGripper
 
 
 def gripper_factory(name):
@@ -38,4 +39,6 @@ def gripper_factory(name):
         return RobotiqThreeFingerGripper()
     if name == "PandaGripper":
         return PandaGripper()
+    if name == "HDTGripper":
+        return HDTGripper()
     raise ValueError("Unknown gripper name {}".format(name))

@@ -15,6 +15,9 @@ from robosuite.environments.panda_nut_assembly import PandaNutAssembly
 from robosuite.environments.baxter_lift import BaxterLift
 from robosuite.environments.baxter_peg_in_hole import BaxterPegInHole
 
+from robosuite.environments.hdt_lift import HDTLift
+from robosuite.environments.hdt_pick_place import HDTPickPlace
+
 __version__ = "0.3.0"
 __logo__ = """
       ;     /        ,--.
